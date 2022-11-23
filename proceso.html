@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Media Noche </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header class="header">  
+        <a class="logo" href="index.html"><img src="imagenes/medianoche_logo.png" alt="logo"></a> 
+    <nav class="navbar">  
+        <ul class="navegacion">
+            <li><a href="servicios.html">SERVICIOS</a></li>
+            <li> <a href="proceso.html">PROCESO</a></li>
+        </ul>
+    </nav>
+    </header>
+    <section>
+        <article>
+            <div>
+                <h1 class="titulo2">EL PROCESO DEL EVENTO</h1> 
+            </div>
+            <div class="texto3">
+                <p>Para la ayuda de nuestros clientes, desarrollamos una lista corta de 3 pasos a seguir a la hora de planificar un evento impecable y garantizar un proceso sin problemas.  
+                </p>
+            </div>
+        </article>
+        <div class="img_proc">
+            <a href="servicios.html"><img src="imagenes/proceso1.jpg" alt="PASO1IMG"></a>
+            <a href="servicios.html"><img src="imagenes/proceso2.jpg" alt="PASO2IMG"></a>
+            <a href="servicios.html"><img src="imagenes/proceso3.jpg" alt="PASO3IMG"></a>
+        </div>
+        <article class="caja_process">
+            <section class="proceso">
+                <div>
+                    <h3 class="pasos">Paso 1: &nbsp;Consulta</h3>
+                </div>
+                    <p class="text_proc">En el primer paso planteamos comenzar el proceso con una <strong>consulta gratuita y libre</strong> con el objetivo de conocer a nuestros clientes y conversar acerca de sus deseos y cómo poder volverlos realidad en base al presupuesto que se establezca. Además, aclararemos cualquier duda que surja acerca de la manera en la que Media Noche se maneja para trabajar. <strong>El encuentro podrá ser en persona o de manera virtual y online.</strong></p>
+            </section>
+            <section class="proceso">
+                <div>
+                    <h3 class="pasos">Paso 2: &nbsp;Propuesta</h3>
+                </div>
+                    <p class="text_proc">Como segundo paso, se plantea que, luego de haber establecido el servicio que se brindará, <strong>se creará un paquete y propuesta, en base al presupuesto. </strong> La misma estará adaptada a los <strong>requisitos, necesidades y deseos de los clientes.</strong> Además, se guiará a los clientes durante todo el proceso de planificación y organización del evento disponiendo cualquier ayuda necesaria, en cuanto a la resolución de conflictos tanto económicos como de diseño.</p> 
+            </section>
+            <section class="proceso">
+                <div>
+                    <h3 class="pasos">Paso 3: &nbsp;Organización</h3>
+                </div>
+                    <p class="text_proc">Para concluir con el proceso, Media Noche tomará en manos la <strong>organización previa, durante y posterior al evento</strong>, enfocando toda su atención en convertir en realidad y darle vida a la propuesta establecida en el paso anterior. <br> Aquí brindaremos las mejores y más originales ideas para llevar a cabo un <strong>evento único y divertido.</strong></p>
+            </section>
+        </article>
+        <div class="escribir">
+            <h3>No te quedes con la duda ¡Escribinos!</h3>
+        </div>
+        <article class="interactivo">
+         <div class="formulario">
+            <form action="mailto: (abru.favero4@gmail.com)" method="get">
+                <label for="nombre">Nombre y Apellido</label>
+                <br>
+                <input type="text" name="nombre" required class="field"> <br>
+                <label for="email">Correo electrónico</label>
+                <br>
+                <input type="email" name="email" required class="field"> <br>
+                <label for="fecha">Fecha del evento</label>
+                <br>
+                <input type="date" name="fecha" class="date"> <br>
+                <label for="evento">Clase de evento</label>
+                <br>
+                <input type="evento" name="evento" required class="field"> <br>
+                <label for="opinion">Mensaje</label>
+                <br>
+                <textarea name="opinion" class="field"></textarea> <br>
+                <button>ENVIAR</button>
+            </form> 
+        </div>
+        <section class="slider">
+        <div class="slide_cont">
+            <div class="elementoCarousel fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="imagenes/img1.jpg" style="width:100%" alt="Primera Slider">
+                <div class="text">Recepción de Casamiento - 2021</div>
+            </div>
+    
+            <div class="elementoCarousel fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="imagenes/img2.jpg" style="width:100%" alt="Segunda Slider">
+                <div class="text">Casamiento de noche - 2022</div>
+            </div>
+    
+            <div class="elementoCarousel fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="imagenes/img3.jpg" style="width:100%" alt="Tercera Slider">
+                <div class="text">. Marido y Mujer . </div>
+            </div>
+    
+            <div class="elementoCarousel fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="imagenes/img4.jpg" style="width:100%" alt="Cuarta Slider">
+                <div class="text">¡Armando los preparativos!</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="slideActual(1)"></span>
+            <span class="dot" onclick="slideActual(2)"></span>
+            <span class="dot" onclick="slideActual(3)"></span>
+            <span class="dot" onclick="slideActual(4)"></span>
+        </div>
+        <br>
+        <script>
+            let indiceSlide = 1;
+            mostrarSlides(indiceSlide);
+
+            function plusSlides(numero) {
+                mostrarSlides(indiceSlide += numero);
+            }
+            function slideActual(numero) {
+                mostrarSlides(indiceSlide = numero);
+            }
+            function mostrarSlides(numero) {
+                let slides = document.getElementsByClassName("elementoCarousel");
+                let indicadores = document.getElementsByClassName("dot");
+    
+                if (numero > slides.length) { indiceSlide = 1 }
+                if (numero < 1) { indiceSlide = slides.length }
+    
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < indicadores.length; i++) {
+                    indicadores[i].className = indicadores[i].className.replace(" active", "");
+                }
+
+                slides[indiceSlide - 1].style.display = "block";
+                indicadores[indiceSlide - 1].className += " active";
+            }
+        </script>
+        </section>
+        </article>
+    </section>
+
+    <footer class="footer"> 
+        <p class="politica"><strong>Política de privacidad <br>Media Noche by El Hada Madrina</strong></p> 
+        <div class="redes">
+            <img src="imagenes/facebook_logo.png" alt="Facebook">
+            <img src="imagenes/instagram_logo.png" alt="Instagram"> 
+        </div>
+    </footer>
+</body>
+</html>

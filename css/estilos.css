@@ -1,0 +1,677 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+body{
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    min-height: 100%; 
+}
+.contenedor{
+    display: grid;
+    grid-template:
+    "header" 100px
+    "navbar" 50px
+    "main"  auto
+    "footer" 100px;
+	row-gap: 3em;
+}
+.header{
+    grid-area: header;
+    background-color: #FFE0E0;
+	height: 345px;
+}
+.logo{
+    display: grid;
+	justify-content: center;
+    padding: 25px 0;
+}
+.navbar{
+    grid-area: navbar;
+    background-color: #FFE0E0;
+	text-align: center;
+    height: 140px;
+}
+a{ 
+    text-decoration: none;
+	color: #B10A73;
+	font-family: 'Poppins', sans-serif;
+}
+nav ul li a:hover {
+    color: white;
+}
+.navegacion li{
+	border: 1px white solid;
+	width: 100%;
+	line-height: 20px;
+	font-weight: bolder;
+	padding: 2rem 0;
+}
+.main{
+    grid-area: main;
+	display: grid;
+	margin-top: 4rem;
+}
+.titulo1{
+    display: grid;
+    color: #B10A73;
+	font-size: 25px;
+	text-align: center;
+	margin-top: 6rem;
+    margin-bottom: 3rem;
+	font-weight:bolder;
+}
+.titulo2{
+    display: grid;
+    color: #B10A73;
+	font-size: 25px;
+	text-align: center;
+	margin-bottom: 3rem;
+	margin-top: 6rem;
+	font-weight:bolder;
+}
+.principal{
+    grid-area: main;
+	margin-top: 3rem;
+	display: grid;
+	justify-content: center;
+}
+.principal img{
+	width: 400px;
+}
+.textnro1{
+    grid-area: main;
+	font-family: 'Poppins', sans-serif;
+    display: grid;
+	background-color: #B10A73;
+	color: white;
+	padding: 30px;
+	text-align: justify;
+}
+.parte1{
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+.parte2{
+	grid-area: main;
+	text-align: center;
+}
+.fiesta{
+	width: 80%;
+	height: 90%;
+}
+h4{
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-size: 25px;
+	color:#B10A73;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+.parte2 a img{
+	box-shadow: 4px 8px 0 #FFE0E0, 0 6px 20px 0 #B10A73;
+}
+.servicios{
+	grid-area: main;
+	background-color: #B10A73;
+	margin-top: 4rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+.servicies, .servicies2{
+    background-color: #FFE0E0;
+    color:black;
+    padding: 2rem;
+	margin-left: 1rem;
+    margin-right: 1rem;
+}
+.servicies{
+	margin-bottom: 1rem;
+}
+.admin{
+	color:#B10A73;
+	font-family:'Italianno', cursive;
+	font-size: 45px;
+	text-align: center;
+	padding-top: 1rem;
+	text-shadow: 1px 1px rgb(255, 121, 121);
+}
+.style, .style1{
+	font-family: 'Poppins', sans-serif;
+	background-color: #FFE0E0;
+	color:black;
+	padding-top: 2rem;
+	text-align: justify;
+}
+.textonro2{
+	grid-area: main;
+	background-color: #FFE0E0;
+	font-family: 'Merriweather', serif;
+	font-size: 25px;
+	color: #B10A73;
+	font-weight: bolder;
+	text-align: center;
+	padding: 1rem;
+	margin-top: 4rem;
+	margin-bottom: 2rem;
+}
+.paquete{
+	font-family: 'Poppins', sans-serif;
+	text-align: justify;
+	margin-left: 2rem;
+    margin-right: 2rem;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+	padding-top: 0%;
+}
+.consulta{
+	font-family: 'Poppins', sans-serif;
+	color: #B10A73;
+	font-size: 30px;
+	text-align: center;
+	margin-top: 6rem;
+    margin-bottom: 6rem;
+	text-shadow: 2px 2px 5px #FFE0E0;
+}
+.consulta:hover{
+	text-shadow: 2px 2px 5px #B10A73;
+}
+.texto3{
+	font-family: 'Poppins', sans-serif;
+	color: white;
+	background-color: #B10A73;
+	font-size: 20px;
+	text-align: justify;
+	margin: 1rem;
+    padding: 2rem;
+}
+.proceso{
+	background-color: #FFE0E0;
+    color:black;
+	margin: 25px 10px;
+}
+.pasos{
+	color:#B10A73;
+	font-family:'Italianno', cursive;
+	font-size: 60px;
+	text-align: center;
+	padding-top: 3rem;
+	padding-bottom: 1rem;
+	text-shadow: 1px 1px rgb(255, 121, 121);
+}
+.text_proc{
+	font-family: 'Poppins', sans-serif;
+	text-align: justify;
+	padding: 2rem;
+}
+.img_proc{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+    margin-bottom: 3rem;
+}
+.img_proc a img {
+    width: 400px;
+	padding-bottom: 1rem;
+}
+.caja_process{
+	margin-top: 3rem;
+}
+.formulario{
+	text-align: center;
+	margin: 4rem;
+	font-family: 'Poppins', sans-serif;
+}
+.escribir{
+    font-family: 'Merriweather', serif;
+    font-size: 22px;
+    color: #B10A73;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+.date{
+	border: solid 1px #ccc ;
+	margin-top: 10px;
+	margin-bottom: 1rem;
+	padding: 10px 50px;
+}
+.field{
+	border: solid 1px #ccc;
+	padding: 10px;
+	width: 330px;
+	margin-top: 10px;
+	margin-bottom: 1rem;
+}
+button{
+	color: white;
+	background-color:#B10A73;
+	border-color:#FFE0E0;
+	font-family: 'Poppins', sans-serif;
+	height: 36px;
+	width: 117px;
+	font-size: 15px;
+}
+.footer{
+    grid-area: footer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    background-color: #FFE0E0;
+	font-family: 'Poppins', sans-serif;
+}
+.politica{
+	font-size: 15px;
+	padding-left: 1rem;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+}
+.redes{
+	display: flex;
+	padding-right: 1rem;
+	height: 30px;
+}
+.redes img{
+	margin: 0 2px;
+}
+.galeria img, .galeria2 img{
+    width: 65%;
+}
+.galeria, .galeria2{
+	text-align: center;
+}
+.slide_cont{
+	display: flex;
+    max-width: 800px;
+    position: relative;
+    align-items: center;
+}
+.slider{
+	display: flex;
+    align-items: center;
+    flex-direction: column;
+	margin-top: 7rem;
+	margin-bottom: 3rem;
+}
+.elementoCarousel{
+	display: none;
+}
+.prev, .next{
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+.next{
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+	background-color: #FFE0E0;
+	color: #B10A73;
+}
+.text{
+	font-family: 'Poppins', sans-serif;
+	color: white;
+	font-weight:700;
+	font-size: 18px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+.numbertext{
+	font-family: 'Poppins', sans-serif;
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+.dot{
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+.active, .dot:hover{
+	background-color: #717171;
+}
+.fade{
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@media (min-width: 768px) {
+	.contenedor{
+		display: grid;
+		grid-template-areas: 
+		"header     header  header"      
+		"navbar 	navbar 	navbar"
+        "main       main    main"       
+        "footer     footer  footer";
+		}
+		
+		.header{
+			grid-area: header;
+			grid-column: 1/span 3;
+		}
+		.navbar{
+			grid-area: navbar;
+		}
+		.parte1{
+			grid-area: main;
+			display: grid;
+		}
+		.parte2{
+			grid-area: main;
+			display: grid;
+			grid-template:
+			"textonro2	 textonro2	textonro2"
+			;
+		}
+		.fiesta{
+			width: initial;
+			height: initial;
+			margin: 1rem;
+		}
+		h4{
+			font-size: 15px;
+			padding-top: 1rem;
+		}
+		.textnro1, .titulo2{
+			grid-area: parte1;
+			display: grid;
+			grid-column: span 2;
+			justify-items: center;
+			justify-content: center;
+		}
+		.textonro2{
+			margin-top: 5rem;
+		}
+		.principal{
+			grid-area: main;
+			display: grid;
+			margin-left: 5px;
+			align-content: center;
+		}
+		.principal img{
+			width: initial;
+		}
+		.proceso{
+			margin: 2rem;
+		}
+		.paquete{
+			margin: 3rem 4rem;
+		}
+		.galeria, .galeria2{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+		.galeria img, .galeria2 img{
+			margin: 5px;
+		}
+		.galeria, .galeria2{
+			text-align: center;
+		}
+		.galeria2 a img, .galeria a img{
+			width: 200px;
+			height: initial
+		}
+		.img_proc{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+		.img_proc a img{
+			padding: 0 15px;
+			width: initial;
+		}
+		.texto3{
+			margin: 3rem;
+		}
+		.formulario{
+			display: flex;
+			justify-content: center;
+			margin-top: 5rem;
+		}
+		.escribir{
+			display: flex;
+			justify-content: center;
+			margin-top: 6rem;
+			font-size: 24px;
+		}
+		.field{
+			width: 700px;	
+			padding: 20px 0;
+		}
+		.slider{
+			margin-top: 10rem;
+		}
+		.footer{
+			grid-area: footer;
+		}
+}
+
+@media (min-width: 992px){ 
+	.contenedor{
+        display: grid;
+        grid-template-areas: 
+        "header     header  navbar"     
+        "main       main    main"       
+        "footer     footer  footer"		
+		;
+		grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 120px auto 100px;
+		}
+
+		.header{
+            height: 150px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+        }
+        .logo{
+            display: grid;
+            margin-left: 55px;
+            justify-content: start;
+			transition: all 0.5s;
+        }
+		.fiesta, .img_proc a img, button{
+			transition: all 0.5s;
+		}
+		.fiesta:hover,.logo:hover, button:hover{
+			transform: scale(1.1);
+		}
+		.img_proc a img:hover{
+			transform: scale(0.9);
+		}
+		.navbar{
+			display: flex;
+			align-items: center;
+			color: black;
+            text-shadow: 2px 2px 5px #B10A73;
+		}
+		.navegacion{
+			list-style: none;
+			display: flex;
+		}
+		.navegacion li{
+			border: none;
+			margin-right: 6rem;
+		}
+		.main{
+			margin-top: 1rem;
+		}
+		.titulo1, .titulo2{
+            display: grid;
+            text-align: start;
+			margin-top: 0%;
+            margin-left: 5%;
+        }
+		.titulo2{
+			margin-top: 4rem;
+			margin-left: 0;
+			justify-content: center
+		}
+		.textnro1{
+			margin-left: 10px;
+			margin-right: 3rem;
+		}
+		.principal{
+			margin-left: 50px;
+			margin-top: 10px;
+		}
+		.parte2 a img{
+			margin-top: 3rem;
+		}
+		.textonro2{
+			margin-top: 7rem;
+			margin-left: 20rem;
+			margin-right: 20rem;
+			text-align: center;
+        }
+		.servicios{
+			display: flex;
+			flex-direction: column;
+		}
+		.admin{
+			font-size: 70px;
+    		padding-left: 7rem;
+    		padding-top: 4rem;
+    		padding-bottom: 4rem;
+		}
+		.style, .style1{
+			margin-right: 5rem;
+			padding-top: 0;
+		}
+		.style{
+			margin-left: 16rem;
+		}
+		.style1{
+			margin-left: 13rem;
+		}
+		.paquete{
+			margin-left: 10rem;
+			margin-right: 10rem;
+			margin-top: 2rem;
+			margin-bottom: 6rem;
+			text-align: center;
+		}
+		.servicies, .servicies2{
+			display: flex;
+    		align-items: center;
+			padding: 0%;
+		}
+		.galeria, .galeria2{
+			display: flex;
+			justify-content: center;
+			margin: 0 1rem;
+			flex-wrap: nowrap;
+		}
+		.galeria2{
+			justify-content: space-around;
+		}
+		.galeria a img{
+			height: initial;
+			margin-bottom: 3rem;
+		}	
+		.galeria a img, .galeria2 a img{
+			width: 90%;
+			padding: 0 3px;		
+		}
+		.caja_process{
+			display: flex;
+			margin-top: 5rem;
+			margin-bottom: 5rem;
+		}
+		.proceso{
+			margin: 0;
+			width: 100%;
+			margin: 5px;
+		}
+		.text_proc{
+			font-size: 15px;
+		}
+		.pasos{
+			padding-top: 3rem;
+			padding-bottom: 0;
+		}
+		.consulta{
+			font-size: 28px;
+			margin-top: 2rem;
+			margin-bottom: 5rem;
+		}
+		.texto3 {
+			text-align: center;
+			margin-top: 3rem;
+			margin-bottom: 3rem;
+			margin-right: 10rem;
+			margin-left: 10rem;
+		}
+		.formulario{
+			text-align: left;
+			margin-left: 5rem;
+			margin-top: 3rem;
+		}
+		.escribir{
+			justify-content: flex-start;
+			margin-left: 4rem;
+			margin-bottom: 0;
+		}
+		.field{
+			border: solid 1px #ccc;
+			padding: 10px;
+			width: 500px;	
+			margin-top: 10px;
+			margin-bottom: 1rem;
+		}
+		.field:hover{
+			border-color: #B10A73;
+		}
+		.footer{
+			padding-left: 2rem;
+		}
+		.redes{
+			padding-right: 2rem;
+		}
+		.redes img{
+			margin: 0 5px;
+		}
+		.interactivo{
+			display: flex;
+			justify-content: space-between;
+		}
+		.slide_cont{
+   			position: relative;
+  		}
+		.slider{
+			margin-right: 5rem;
+			margin-top: 1rem;
+			margin-bottom: 6rem;
+		}
+}
